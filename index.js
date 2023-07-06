@@ -1,4 +1,5 @@
 let express=require('express');
+const cors=require("cors")
 const { connection } = require('./db');
 const { bookRouter } = require('./Routes/book.route');
 let app=express();
