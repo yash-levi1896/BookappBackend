@@ -3,7 +3,7 @@ const { connection } = require('./db');
 const { bookRouter } = require('./Routes/book.route');
 let app=express();
 require('dotenv').config()
-
+app.use(cors())
 app.use(express.json());
 
 app.get("/",async(req,res)=>{
