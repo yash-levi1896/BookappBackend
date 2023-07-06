@@ -5,7 +5,7 @@ let bookSchema=mongoose.Schema({
     Author:String,
  Genre:{
    type:String,
-    enum:["Fiction","Science","comic"]
+    enum:["Fiction","Science","Comic"]
  } ,
  Description: String,
  Price:Number
